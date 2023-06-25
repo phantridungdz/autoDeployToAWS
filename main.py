@@ -50,11 +50,10 @@ with zipfile.ZipFile(zip_file_path, 'w') as zipf:
                     zip_file_path = os.path.relpath(file_path, folder_path)
                     zipf.write(file_path, zip_file_path)
 
-# Thông tin kết nối SSH
-host = 'ec2-13-229-222-13.ap-southeast-1.compute.amazonaws.com'
+host = 'your ip'
 port = 22
 username = 'ubuntu'
-private_key_path = 'techJDIProduction.pem'
+private_key_path = 'your key pair path'
 
 remote_file_path = '/server/'
 unzip_file_name = 'archive.zip'
